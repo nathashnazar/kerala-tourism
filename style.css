@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Julius+Sans+One&family=Lato&family=Roboto&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Major+Mono+Display&family=Sacramento&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#resize{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.heading {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  .sub-heading {
+    font-family: 'Major Mono Display', monospace;
+  }
+.districts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    padding-top: 5px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+}
+.box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+.box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.box:hover .imgBx img{
+    opacity: 0;
+}
+.box .content{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.box:hover .content{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+.box .content h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.box .content p{
+    margin: 0px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+}
+.box:hover .content p{
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.pandi{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    
+}
+.image__img{
+    display: block;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.me{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 400px;
+    background: 0, 0, 0, 0.6;
+    color: #ffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    padding-top: 5px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+}
+.me >*{
+    transform: translateY(20px);
+    transition: 0.25s;
+}
+.me:hover{
+    opacity: 1;
+}
+.me:hover >*{
+    transform: translateY(0);
+}
+.image_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around ;
+    gap: 20px;
+}
+#gap-btw{
+    margin-top: 20px
+}
+.footer-top {
+    padding-top: 90px;
+    padding: 90px;
+    background-color: #1F1D36;;
+
+}
+
+.footer-top a {
+    color: var(--body);
+
+}
+
+.footer-top a:hover {
+    color: #fff;
+
+}
+
+.footer-bottom {
+    background-color: #1F1D36;;
+}
+.logo {
+    width: 160px;
+}
+.text-white{
+    color: #fff;
+}
+.limks{
+    color: #fff;
+    text-decoration: none;
+}
+li{
+    color: #fff;
+    text-decoration: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.destination {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.2);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.destination img {
+    transition: all 0.4s ease;
+    min-height: 350px;
+
+}
+
+.destination:hover .overlay {
+    opacity: 1;
+}
+
+.destination:hover img {
+    transform: scale(1.1);
+}
+img {
+    width: 100%;
+}
+.signup {
+    position: relative;
+    max-width: 800px;
+    height: 700px;
+}
+
+.signin {
+    position: relative;
+    max-width: 800px;
+    height: 600px;
+}
+
+
+.myRightCtn {
+    position: relative;
+    background-image: url("img/kathakali.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    color: var(--primary);
+    font-size: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myLeftCtn {
+    position: relative;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    padding-left: 50px;
+}
+
+.myLeftCtn header {
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.myCard .row {
+    height: 100%;
+}
+
+.myCard {
+    position: relative;
+    background: #fff;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.myRightCtn header {
+    color: #fff;
+    font-size: 44px;
+}
+
+.box {
+    position: relative;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.myLeftCtn .myInput {
+    width: 230px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+}
+
+.myLeftCtn .myInput:focus {
+    outline: none;
+}
+
+.myForm {
+    position: relative;
+    margin-top: 50px;
+}
+
+.myLeftCtn .butt {
+    background: linear-gradient(45deg, #bb36fd, #9b00e8);
+    color: #fff;
+    width: 230px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+}
+
+.myLeftCtn .butt:hover {
+    background: linear-gradient(45deg, #c85bff, #b726ff);
+}
+
+.myLeftCtn .butt:focus {
+    outline: none;
+}
+
+.myLeftCtn .fas {
+    position: relative;
+    color: #bb36fd;
+    left: 36px;
+}
+
+.myLeftCtn a {
+    color: #9C19E0;
+    font-weight: 600;
+
+}
